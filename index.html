@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css" />
+    <title>GRADING CALCULATOR</title>
+</head>
+<body>
+    <h1>GRADING SYSTEM ASSIGNMENT</h1>
+    <div id="main" >
+    <div id="headline"><h2>Grading System in JS</h2></div>
+        <div>
+        <label>English  </label>
+        <input type="number" id="English" pattern="[0-100]" placeholder="Enter Marks" />
+        </div>
+        <div>
+        <label>Maths   </label>
+        <input type="number" id="Maths" pattern="[0-100]" placeholder="Enter Marks" />
+        </div>
+        <div>
+        <label>Physics  </label>
+        <input type="number" id="Physics" pattern="[0-100]" placeholder="Enter Marks" />
+        </div>
+        <div>
+        <label>Chemistry </label>
+        <input type="number" id="Chemistry" pattern="[0-100]" placeholder="Enter Marks" />
+        </div>  
+        <div>
+        <label>Computer  </label>
+        <input type="number" id="Computer" pattern="[0-100]" placeholder="Enter Marks" />
+    </div>
+    <div id="btn">
+        <input
+          type="button"
+          value="Calculate Grade"
+          class="form-button"
+          onclick="calculate()"
+        />
+      </div>
+      <div class="form-group showdata">
+        <p id="showdata"></p>
+      </div>
+    </div>
+    <div id="result">
+        <div id="rhead1"><h1>Total</h1></div>
+        <div id="total"></div>
+
+        <div id="rhead2"><h1>Average</h1></div>
+        <div id="average"></div>
+
+        <div id="rhead3"><h1>Grade</h1></div>
+        <div id="grade"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
